@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const store = require('./data/store');
+const valueMappingsRouter = require('./routes/valueMappings');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -64,6 +65,8 @@ app.get('/api/tenants/:customerId', (req, res) => {
   }
   res.json(tenant);
 });
+
+app.use('/api/value-mappings', valueMappingsRouter);
 
 // Start server
 app.listen(PORT, () => {

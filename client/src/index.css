@@ -169,3 +169,158 @@ header p {
   color: #6b7280;
   font-size: 0.9rem;
 }
+
+.value-mapping {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 24px;
+}
+
+.vm-muted {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.vm-warning {
+  color: #b45309;
+}
+
+.vm-error {
+  color: #dc2626;
+}
+
+.vm-toolbar,
+.vm-config {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.vm-config {
+  background: #f9fafb;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 0.9rem;
+}
+
+.vm-entities {
+  display: flex;
+  gap: 4px;
+}
+
+.vm-entity,
+.vm-button {
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+.vm-entity.active,
+.vm-button {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: white;
+}
+
+.vm-banner {
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.vm-banner.ok {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.vm-banner.warn {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.vm-parse-issues {
+  margin-bottom: 16px;
+  font-size: 0.85rem;
+}
+
+.vm-parse-issues ul {
+  margin: 8px 0 0 20px;
+}
+
+.vm-field {
+  margin: 20px 0;
+}
+
+.vm-field h4,
+.vm-preview h4 {
+  margin-bottom: 8px;
+}
+
+.vm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.vm-table th,
+.vm-table td {
+  text-align: left;
+  padding: 6px 10px;
+  border-bottom: 1px solid #f3f4f6;
+  white-space: nowrap;
+}
+
+.vm-table th {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.vm-row.none {
+  background: #fee2e2;
+}
+
+.vm-row.review {
+  background: #fef3c7;
+}
+
+.vm-badge {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  background: #e5e7eb;
+}
+
+.vm-badge.manual {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.vm-badge.none {
+  background: #dc2626;
+  color: white;
+}
+
+.vm-link {
+  border: none;
+  background: none;
+  color: #2563eb;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.vm-scroll {
+  overflow-x: auto;
+}
+
+.vm-invalid {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.vm-preview-actions {
+  margin: 16px 0;
+}

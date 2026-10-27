@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ValueMapping from './ValueMapping';
 
 const TABS = [
   { id: 'dashboard', label: 'Dashboard' },
@@ -62,7 +63,10 @@ function App() {
           <PlaceholderTab title="Customer Info" description="Collect and validate customer information" />
         )}
         {activeTab === 'data-mapping' && (
-          <PlaceholderTab title="Data Mapping" description="Map customer data to platform configuration" />
+          <>
+            <PlaceholderTab title="Data Mapping" description="Map customer data to platform configuration" />
+            <ValueMapping />
+          </>
         )}
         {activeTab === 'tenant-setup' && (
           <PlaceholderTab title="Tenant Setup" description="Provision and configure customer tenant" />
